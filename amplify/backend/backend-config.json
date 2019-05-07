@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"cognito32ab49ca": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"static": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

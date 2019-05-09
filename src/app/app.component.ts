@@ -11,9 +11,8 @@ export class AppComponent {
   signedIn: any;
   user: any;
   greeting: string;
-  constructor(
-    private amplifySvc: AmplifyService
-  ) {
+
+  constructor(private amplifySvc: AmplifyService) {
     this.amplifySvc.authStateChange$.subscribe(authState => {
       this.signedIn = authState.state === 'signedIn';
       if(!authState.user) {
@@ -24,4 +23,10 @@ export class AppComponent {
       }
     })
   }
+
+  onImagePicked(event) {
+    console.log(event);
+  }
+
+  onImageLoaded(event) {}
 }

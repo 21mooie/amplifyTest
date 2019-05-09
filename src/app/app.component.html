@@ -1,2 +1,7 @@
 <amplify-authenticator></amplify-authenticator>
+<amplify-photo-picker 
+    path="pics"
+    (picked)="onImagePicked($event)"
+    (loaded)="onImageLoaded($event)">
+</amplify-photo-picker>
 <router-outlet></router-outlet>

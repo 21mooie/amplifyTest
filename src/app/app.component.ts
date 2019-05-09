@@ -29,4 +29,8 @@ export class AppComponent {
   }
 
   onImageLoaded(event) {}
+
+  onAlbumImageSelected( event ) {
+    window.open( event, '_blank' );
+}
 }

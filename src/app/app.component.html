@@ -4,4 +4,8 @@
     (picked)="onImagePicked($event)"
     (loaded)="onImageLoaded($event)">
 </amplify-photo-picker>
+<amplify-s3-album 
+    path="pics" 
+    (selected)="onAlbumImageSelected($event)">
+</amplify-s3-album>
 <router-outlet></router-outlet>

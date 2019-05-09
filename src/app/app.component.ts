@@ -11,6 +11,12 @@ export class AppComponent {
   signedIn: any;
   user: any;
   greeting: string;
+  customVoiceConfig = {
+    silenceDetectionConfig: {
+        time: 2000,
+        amplitude: 0.2
+    }   
+}
 
   constructor(private amplifySvc: AmplifyService) {
     this.amplifySvc.authStateChange$.subscribe(authState => {
@@ -32,5 +38,9 @@ export class AppComponent {
 
   onAlbumImageSelected( event ) {
     window.open( event, '_blank' );
-}
+  }
+
+  onBotComplete($event){
+    console.log($event);
+  }
 }

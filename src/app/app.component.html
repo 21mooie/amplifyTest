@@ -8,4 +8,13 @@
     path="pics" 
     (selected)="onAlbumImageSelected($event)">
 </amplify-s3-album>
+<amplify-interactions 
+    bot="yourBotName" 
+    clearComplete="true" 
+    (complete)="onBotComplete($event)"
+    [conversationModeOn]="false"
+    [voiceConfig]="customVoiceConfig"
+    [voiceEnabled]="true"
+    [textEnabled]="true">
+</amplify-interactions>
 <router-outlet></router-outlet>

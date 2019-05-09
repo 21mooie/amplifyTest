@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
+import { AmplifyAngularModule, AmplifyService, AmplifyIonicModule } from 'aws-amplify-angular';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AmplifyAngularModule
+    AmplifyAngularModule,
+    AmplifyIonicModule
   ],
   providers: [
     AmplifyService
